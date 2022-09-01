@@ -16,6 +16,8 @@
   --grey-bg-color: #2f303a;
   --lightgrey-bg-color: #f5f4fa;
   --btn-bg-color: #188ce8;
+  /* Icons */
+  --primery-icon-color: #afb1b8;
 
   --items: 3;
   --indent: 30px;
@@ -127,14 +129,27 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .link-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--primary-text-color);
   text-decoration: none;
 }
 
+.contact-icon {
+  fill: var(--primary-text-color);
+}
+
 /* Hero */
 
-.benefits-container {
-  display: flex;
+.container-hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66 40%),
+    url(../images/bg/Img-1.jpg);
+  background-position: center;
 }
 
 .hero {
@@ -195,6 +210,10 @@ img {
 }
 
 /* Benefits */
+
+.benefits-container {
+  display: flex;
+}
 
 .visually-hidden {
   position: absolute;
@@ -277,12 +296,44 @@ img {
 }
 
 .text {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
 
   color: var(--primary-text-color);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--primery-white-color);
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: var(--primery-icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-text-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primery-white-color);
 }
 
 /* Footer */
