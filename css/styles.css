@@ -341,7 +341,7 @@ img {
 .customers-link {
   display: flex;
   gap: 30px;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   
 }
@@ -400,6 +400,53 @@ img {
 .footer-contact:focus {
   color: var(--accent-text-color);
 }
+.footer .container {
+ display: flex;
+ gap: 70px;
+}
+
+.socials-text {
+  margin-bottom: 20px;
+ 
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+text-transform: uppercase;
+
+color: var(--primery-white-color);
+}
+
+.socials-footer-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+.socials-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);;
+  border-radius: 50%;
+
+}
+
+.socials-footer-link:hover {
+  background-color: var(--accent-text-color);
+}
+
+.social-icon-footer {
+  fill:var(--primery-white-color)
+}
+
+
+
+
 /* ПОРТФОЛІО */
 /* Наші проекти */
 
