@@ -336,6 +336,16 @@ img {
   fill: var(--primery-white-color);
 }
 
+/* Customers */
+
+.customers-link {
+  display: flex;
+  gap: 30px;
+  align-content: center;
+  justify-content: center;
+  
+}
+
 /* Footer */
 
 .footer {
