@@ -137,6 +137,7 @@ img {
 }
 
 .contact-icon {
+
   fill: var(--primary-text-color);
 }
 
@@ -255,6 +256,15 @@ img {
 .benefits-item {
   width: 270px;
 }
+.benefits-icon {
+  display: flex;
+  justify-content: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
 
 /* Work */
 
@@ -282,9 +292,12 @@ img {
   background-color: var(--lightgrey-bg-color);
 }
 
-.list-item {
+.team-list-item {
   background-color: var(--primery-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
 
 .title-member {
   margin-bottom: 10px;
@@ -338,12 +351,32 @@ img {
 
 /* Customers */
 
-.customers-link {
+.customers-list {
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: center;
   
+}
+
+.customers {
+ padding: 16px 32px;
+  width: 170px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--accent-text-color);
+  
+}
+.customers:hover,
+.customers:focus {
+border: 1px solid var(--accent-text-color);
+}
+.customers-icon {
+  fill: #AFB1B8;
 }
 
 /* Footer */
@@ -405,6 +438,9 @@ img {
  gap: 70px;
 }
 
+.socials-footer {
+  margin-top: 12px;
+}
 .socials-text {
   margin-bottom: 20px;
  
@@ -493,6 +529,13 @@ color: var(--primery-white-color);
 .project-item {
   flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) /
     var(--items);
+}
+
+.project-item:hover {
+  border: 1px #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
