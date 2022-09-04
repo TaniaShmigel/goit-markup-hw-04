@@ -90,8 +90,7 @@ img {
   gap: 50px;
 }
 
-.page-header .link,
-.page-header .link-contact {
+.page-header .link-site-nav {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -115,13 +114,13 @@ img {
 .logo-name,
 .list-contact .link-contact:hover,
 .list-contact .link-contact:focus,
-.site-nav .link.current,
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link-site-nav.current,
+.site-nav .link-site-nav:hover,
+.site-nav .link-site-nav:focus {
   color: var(--accent-text-color);
 }
 
-.page-header .link {
+.page-header .link-site-nav {
   color: var(--secondary-text-color);
 }
 
@@ -138,12 +137,16 @@ img {
 .link-contact {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   color: var(--primary-text-color);
   text-decoration: none;
 }
 
 .contact-icon {
+  display: flexbox;
+  align-items: center;
+
   fill: var(--primary-text-color);
 }
 
@@ -269,8 +272,9 @@ img {
 }
 .benefits-icon {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
 
   background-color: #f5f4fa;
@@ -370,7 +374,10 @@ img {
 }
 
 .customers {
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -444,12 +451,10 @@ img {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
-.socials-footer {
-  margin-top: 12px;
-}
 .socials-text {
   margin-bottom: 20px;
 
@@ -530,12 +535,18 @@ img {
   gap: 30px;
 }
 
+.link-project {
+  display: block;
+  text-decoration: none;
+}
+
 .project-item {
   flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) /
     var(--items);
 }
 
-.project-item:hover {
+.link-project:hover,
+.link-project:focus {
   border: 1px #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -564,8 +575,3 @@ img {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-/**
-  |============================
-  | 
-  |============================
-*/
